@@ -3,3 +3,7 @@ Dockerfile with ubuntu 16.04 and Python 3
 
 ## Docker Hub
 https://hub.docker.com/r/roove/ubuntu-py3/
+
+## Using
+
+FROM roove/ubuntu-py3:latest
