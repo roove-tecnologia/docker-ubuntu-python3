@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-maintainer Luis Siqueira, siqueira@roove.com.br
+MAINTAINER Luis Siqueira, siqueira@roove.com.br
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LIBEV_FLAGS=4
