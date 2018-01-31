@@ -20,3 +20,7 @@ RUN apt-get install -y nginx
 RUN apt-get install python3-setuptools -y
 RUN apt-get -y install python3-pip
 RUN pip3 install --upgrade pip
+
+RUN apt-get install -y build-essential freeglut3 freeglut3-dev binutils-gold
+RUN apt-get install -y "^libxcb.*" libx11-xcb-dev libglu1-mesa-dev libxrender-dev
+RUN apt-get install -y libglfw3-dev libgles2-mesa-dev
