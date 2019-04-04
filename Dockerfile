@@ -1,12 +1,12 @@
-FROM phusion/baseimage:latest
+FROM phusion/baseimage:0.11
 
 MAINTAINER Luis Siqueira, siqueira@roove.com.br
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LIBEV_FLAGS=4
 
-RUN apt-get upgrade -y
 RUN apt-get update --fix-missing
+RUN apt-get upgrade -y
 RUN apt-get install python3 -y
 RUN apt-get install libssl1.0.0 --force-yes -y
 
