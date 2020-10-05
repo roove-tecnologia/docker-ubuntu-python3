@@ -1,15 +1,15 @@
-FROM phusion/baseimage:latest
+FROM phusion/baseimage:18.04-1.0.0
 
 MAINTAINER Luis Siqueira, siqueira@roove.com.br
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LIBEV_FLAGS=4
 
-RUN add-apt-repository ppa:deadsnakes/ppa -y
 RUN apt-get upgrade -y
 RUN apt-get update --fix-missing
-RUN apt-get install -y python3.6
-RUN rm /usr/bin/python3 && ln -s /usr/bin/python3.6 /usr/bin/python3
+RUN apt-get install -y python3.8
+RUN rm /usr/bin/python3 && ln -s /usr/bin/python3.8 /usr/bin/python3
+RUN apt-get install -y python3.8-dev
 
 RUN apt-get install libssl1.0.0 --force-yes -y
 
